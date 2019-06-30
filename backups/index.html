@@ -1,0 +1,211 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	<head>
+
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+		<title>Rede de Blogs Dilma 2010</title>
+		<link rel="stylesheet" href="style.css" type="text/css"/>
+		
+		<!--[if lte IE 6]>
+			<link rel="stylesheet" href="style_ie6.css" type="text/css"/>
+		<![endif]-->
+		
+		<script type="text/javascript">
+			
+			function show (id) {
+				
+				document.getElementById(id).style.display = 'block';
+				
+			}
+			
+			function hide (id) {
+				
+				document.getElementById(id).style.display = 'none';
+				
+			}
+			
+			function getW() {
+				
+				var windowWidth;
+				
+				if (typeof(window.innerWidth) == 'number') {
+					//Non-IE
+					windowWidth = window.innerWidth;
+					
+				} else if (document.documentElement && (document.documentElement.clientWidth || document.documentElement.clientHeight)) {
+					//IE 6+ in 'standards compliant mode'
+					windowWidth = document.documentElement.clientWidth + 21;
+					
+				} else if (document.body && (document.body.clientWidth || document.body.clientHeight)) {
+					//IE 4 compatible
+					windowWidth = document.body.clientWidth + 21;
+					
+				}
+				
+				return windowWidth;
+			
+			}
+			
+			function adapt() {
+				
+				var min1 = 1024;
+				var min2 = 800;
+				var windowWidth = getW();
+				
+				if (windowWidth < min1) {
+					
+					hide('dilma');
+					if (windowWidth < min2) hide('pre_footer');
+					hide('ads_footer');
+					hide('footer_flag');
+					
+				} else {
+					
+					show('dilma');
+					if (windowWidth > min2) show('pre_footer');
+					show('ads_footer');
+					show('footer_flag');
+					
+				}
+				
+			}
+			
+			window.onload = function init() {
+				
+				adapt();
+				
+				if (!document.getElementsByTagName) return;
+				
+				anchors = document.getElementsByTagName('a');
+				
+				for (i=0; i<anchors.length; i++) {
+					
+					anchor = anchors[i];
+					if (anchor.getAttribute("href") && anchor.getAttribute('rel') == 'external') anchor.target = '_blank';
+					
+				}
+				
+			}
+			
+			window.onresize = function onResize() { adapt(); }
+			
+		</script>
+		
+	</head>
+	
+	<body>
+		
+		<div id="main">
+		
+			<div id="header">
+			
+				<img id="logo" alt="Adesivagem Virtual" src="images/logo.jpg"/>
+				<img id="dilma" alt="Dilma" src="images/dilma.jpg"/>
+			
+			</div>
+			
+			<div id="sep">PROPAGANDA PROPAGANDA PROPAGANDA PROPAGANDA PROPAGANDA PROPAGANDA PROPAGANDA PROPAGANDA PROPAGANDA</div>
+			
+			<div id="content">
+				
+				<form method="post" enctype="multipart/form-data" action="engine.php">
+					
+					<div class="box">
+					
+						<h2>1. Escolha seu adesivo</h2>
+					
+						<ul id="stick_list">
+							
+							<li style="background: #a91212; border-bottom: 1px dashed black;">
+								
+								<img alt="" src="sticks/1.gif"/>
+								<input type="radio" name="stick" value="1" checked="checked"/>
+								
+							</li>
+							
+							<li>
+								
+								<img alt="" src="sticks/2.gif"/>
+								<input type="radio" name="stick" value="2"/>
+								
+							</li>
+							
+							<li>
+								
+								<img alt="" src="sticks/3.gif"/>
+								<input type="radio" name="stick" value="3"/>
+								
+							</li>
+							
+						</ul>
+						
+					</div>
+					
+					<div class="box">
+					
+						<h2>2. Envie sua foto e clique em ADESIVAR!</h2>
+						
+						<input type="file" name="photo" size="50"/>
+						<input type="submit" value="ADESIVAR!"/>
+						
+					</div>
+					
+				</form>
+				
+				<div id="pre_footer">
+				
+					<h2 style="font-size: 18px;">Entre em contato</h2>
+					
+					<p style="padding-left: 240px; padding-right: 50px; text-align: center;">
+					Você pode contatar o criador pelo <a>Orkut</a>, <a>Facebook</a> ou <a>Twitter</a> e tirar dúvidas, informar erros, sugerir mudanças ou até compartilhar um novo adesivo.
+					</p>
+					
+				</div>
+				
+				<div id="ads_footer">
+				
+					<script type="text/javascript" src="http://afiliados.cliquemidia.com/getbanner.php?ads=MjU1OCMxMTEjYmlkIzY2MSM1NTYjMzkwMzM0IzMwMCMyNTAjMzAweDI1MF9iYWxhZGEuanBn"></script>
+					
+				</div>
+			
+			</div>
+			
+			<div id="footer">
+				
+				<div>
+					
+					<ul>
+						
+						<li><strong>Compartilhe: </strong></li>
+						
+					</ul>
+					
+					<ul>
+						
+						<li><a id="orkut" class="shareicons" href="#"></a></li>
+						<li><a id="twitter" class="shareicons" href="#"></a></li>
+						<li><a id="youtube" class="shareicons" href="#"></a></li>
+						<li><a id="facebook" class="shareicons" href="#"></a></li>
+						
+					</ul>
+					
+					<div id="credits">
+						
+						Desenvolvido e mantido por <a rel="external" href="http://www.enricodias.com">Enrico Dias</a> (<a href="mailto:enrico@enricodias.com">enrico@enricodias.com</a>) e hospedado por <a rel="external" href="http://www.mdweb.com.br">MDweb.com.br</a><br/>
+						<a rel="external" href="http://creativecommons.org/licenses/by-nc-sa/2.5/deed.pt">Copyleft © 2010</a> - Adesivagem Virtual Dilma. Valid XHTML 1.1 | Valid CSS 2.1 | <a rel="external" href="http://portuguese-191425397934.spampoison.com">SPN</a> | Imagens de <a rel="external" href="http://dilma2010.net/">Dilma2010.net</a>
+						
+					</div>
+					
+				</div>
+				
+				<div id="footer_flag"></div>
+			
+			</div>
+		
+		</div>
+		
+	</body>
+	
+</html>

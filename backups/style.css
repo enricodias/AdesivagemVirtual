@@ -1,0 +1,199 @@
+* {
+
+	font-family: Tahoma, Geneva, sans-serif;
+	font-size: 11px;
+	color: #FFF;
+	
+	text-align: center;
+	
+}
+
+body {
+
+	font-size: 13px;
+	color: #555;
+	background: #a91212 url("images/great_bg.png") 0px -570px repeat-x;
+	margin: 0;
+	padding: 0;
+	
+}
+
+a { text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+#main {
+
+	width: 99.8%;
+	margin: 0 auto;
+
+}
+
+#header {
+
+	width: 100%;
+	float: left;
+	
+}
+
+#logo {
+
+	float: left;
+	margin: 40px 0 0 40px;
+
+}
+
+#header #dilma{ 
+
+	margin-right: 26px;
+	float: right;
+
+}
+
+#sep { 
+
+	width: 95%;
+	height: 8px;
+	line-height: 0;
+	float: left;
+	
+	background: #D01919;
+	border-top: 5px solid #7E0909;
+	border-bottom: 2px solid #FFB300;
+	
+	margin: 0 2.5% 0px 2.5%;
+	padding-top: 6px;
+	
+	color: #FFB300;
+
+}
+
+#content {
+
+	width: 95%;
+	float: left;
+
+	margin: 0 2.5% 0 2.5%;
+	
+}
+
+.box {
+
+	width: 99.9%;
+	margin-top: 12px;
+	padding-bottom: 10px;
+	background-color: #D01919;
+	border: 1px solid #EA1C1C;
+
+}
+
+.box h2 {
+
+	text-align: left;
+	margin-top: 0;
+	padding: 5px 0 8px 5px;
+	
+	font-size: 14px;
+	
+	background: url("images/great_bg.png") repeat-x;
+
+}
+
+#stick_list li{
+	
+	display: inline;
+	margin-right: 30px;
+
+}
+
+#pre_footer, #ads_footer { 
+
+	float: left;
+	padding-top: 20px;
+	
+}
+
+#ads_footer { 
+
+	padding-bottom: 10px;
+
+}
+
+#pre_footer {
+
+	width: 600px;
+	height: 220px;
+	background: url("images/bg_bar.gif") no-repeat top left;
+
+	margin: 0 20px 0 15px;
+	
+}
+
+#footer {
+
+	float: left;
+	width: 100%;
+	height: 165px;
+	background: #980e0e url("images/great_bg.png") 0px -34px repeat-x;
+	
+}
+
+#footer div {
+
+	float: left;
+	margin: 45px 0 0 15px;
+	text-align: left;
+	
+}
+
+#footer ul {
+
+	margin-left: -45px;
+	text-align: left;
+	margin: 0 0 12px -40px;
+
+}
+
+#footer li{
+	
+	display: inline;
+	
+}
+
+#footer #credits {
+
+	text-align: left;
+	margin-left: 0px;
+	margin-top: 10px;
+
+}
+
+.shareicons {
+
+	background: url("images/orkut.png") no-repeat;
+	float: left;
+	height: 42px;
+	overflow: hidden;
+	width: 130px;
+
+}
+
+#orkut:hover { background-position: 0 -42px; }
+#twitter { background-position: -142px 0; }
+#twitter:hover {	background-position: -142px -42px; }
+#facebook { background-position: -284px 0; }
+#facebook:hover { background-position: -284px -42px; }
+#youtube { background-position: -426px 0; }
+#youtube:hover { background-position: -426px -42px; }
+
+
+#footer #footer_flag {
+
+	margin: 0 30px 15px 0;
+	float: right;
+	
+	width: 160px;
+	height: 152px;
+	
+	background: #980e0e url("images/bg_selo.gif") no-repeat;
+
+}
