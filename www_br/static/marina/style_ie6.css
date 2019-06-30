@@ -1,0 +1,14 @@
+*{ overflow-x: hidden; }
+#logo { margin: 0 0 0 20px; }
+#content { margin: 0 0.5% 0 0.5%; }
+.box { width: 99.3%; }
+#file { margin-bottom: 10px; }
+#submit { padding: 9px; }
+#imageCrop { height: 442px; }
+#preview { margin: -5px 0 0 0; }
+#preview_stick { left: 0; }
+#sticks_imgs { margin: -7px 0 0 -30px; }
+#pre_footer { margin: 0 20px 0 10px; }
+#pre_footer h2 { padding-top: 30px; }
+#footer_content { margin: 15px 0 0 8px; }
+#footer ul { margin: 0 0 12px 0; }

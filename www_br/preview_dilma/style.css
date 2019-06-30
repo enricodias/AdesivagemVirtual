@@ -1,0 +1,393 @@
+
+/********** GLOBAL BEGIN **********/
+
+	* {
+		
+		font-family: Tahoma, Geneva, sans-serif;
+		font-size: 11px;
+		text-align: center;
+		color: #fff;
+		
+	}
+
+	body {
+		
+		margin: 0;
+		padding: 0;
+
+		font-size: 13px;
+		color: #555;
+		
+		background: #a91212 url("images/backgrounds.png") 0px -636px repeat-x;
+		
+	}
+
+	a { text-decoration: none; }
+	a:hover { text-decoration: underline; }
+
+	#main {
+		
+		width: 100%;
+		margin: 0 auto;
+		
+	}
+
+/********** GLOBAL END **********/
+
+
+/********** HEADER BEGIN **********/
+
+	#header {
+		
+		float: left;
+		width: 100%;
+		
+	}
+
+	#logo {
+		
+		float: left;
+		margin: 40px 0 0 40px;
+		
+	}
+
+	#logoLeft { 
+		
+		display: none;
+		float: right;
+		margin-right: 2.5%;
+		
+	}
+	
+	#sep { 
+		
+		float: left;
+		width: 95%;
+		margin: 0 2.5% 0 2.5%;
+		border-top: 5px solid #7E0909;
+		border-bottom: 2px solid #FFB300;
+		line-height: 0;
+		color: #FFB300;
+		background: #D01919;
+		
+	}
+	
+	#adsTop { height: 90px; }
+	
+/********** HEADER END **********/
+
+
+/********** CONTENT BEGIN **********/
+
+	#content {
+
+		float: left;
+		width: 95%;
+		margin: 0 2.5% 0 2.5%;
+		
+	}
+	
+	#inner_content { 
+		
+		float: left;
+		width: 100%;
+		
+	}
+	
+	.box {
+
+		width: 100%;
+		min-height: 140px;
+		margin-top: 12px;
+		padding-bottom: 10px;
+		border: 1px solid #EA1C1C;
+		background-color: #D01919;
+
+	}
+	
+	.box h2 {
+
+		margin-top: 0;
+		padding: 5px 0 8px 5px;
+		
+		font-size: 14px;
+		text-align: left;
+		
+		background: #D91E1E;
+
+	}
+	
+	.box .span { font: bold 14px arial, sans-serif; }
+	.box a { border-bottom: 1px dashed;}
+	.box a:hover {
+		
+		border-bottom: 1px solid;
+		text-decoration: none;
+		
+	}
+	
+	.emailform {
+		
+		border:1px solid #ddd;
+		background: #fafafa;
+		font: bold 16px arial, sans-serif;
+		font-size: 15px;
+		color: #000;
+		margin-right: 40px;
+		text-align: left;
+		
+	}
+
+	#radio_h { display: none;}
+	#file { margin-right: 20px; }
+	#selectFile { margin: 0 0 20px 0; }
+	
+	#submit {
+		
+		border: 0px;
+		width: 115px;
+		padding: 11px;
+		cursor: pointer;
+		font: bold 16px verdana;
+		color: #A71212;
+		
+		background: url('images/backgrounds.png') -175px -495px no-repeat;
+		
+	}
+	
+	/* #adsIn { height: 60px; } */
+	#adsIn { height: 0px; }
+	
+	input { color: #000; }
+	input:hover, input:focus {
+		
+		border-color:#c5c5c5;
+		background:#f6f6f6;
+		
+	} 
+	
+	#loading { display: none; }
+	#stick_box{ height: 260px; }
+	
+	.sticks {
+		
+		float: left;
+		width: 215px;
+		height: 48px;
+		margin: 10px 15px 10px 15px;
+		
+		text-align: left;
+		
+		cursor: pointer;
+		overflow: hidden;
+		background: url("images/sticks.gif") no-repeat;
+
+	}
+	
+	#s1 { background-position: 0 0; }
+	#s2 { background-position: 0 -68px; }
+	#s3 { background-position: 0 -136px; }
+	#s4 { background-position: 0 -204px; }
+	#s5 { background-position: 0 -272px; }
+	#s6 { background-position: 0 -340px; }
+	#s7 { background-position: 0 -408px; }
+	#s8 { background-position: 0 -476px; }
+	#s9 { background-position: 0 -544px; }
+	
+	#sticks_imgs #s1 { background-position: -25px 0; }
+	#sticks_imgs #s2 { background-position: -25px -68px; }
+	#sticks_imgs #s3 { background-position: -25px -136px; }
+	#sticks_imgs #s4 { background-position: -25px -204px; }
+	#sticks_imgs #s5 { background-position: -25px -272px; }
+	#sticks_imgs #s6 { background-position: -25px -340px; }
+	#sticks_imgs #s7 { background-position: -25px -408px; }
+	#sticks_imgs #s8 { background-position: -25px -476px; }
+	#sticks_imgs #s9 { background-position: -25px -544px; }
+	
+	#imageCrop {
+		
+		float: left;
+		width: 500px;
+		height: 854px;
+		text-align: center;
+		
+	}
+	
+	#wrap { padding: 0 0 20px 0; }
+	#photo { display: none; }
+	
+	#right_side {
+		
+		float: left;
+		width: 220px;
+		padding-left: 12px;
+		
+	}
+	
+	#preview_box { height: 280px; }
+	#preview { margin-left: 15px; }
+	
+	#preview_stick {
+		
+		position: relative;
+		top: -48px;
+		left: 15px;
+		z-index: 9999;
+		width: 190px;
+		height: 48px;
+		margin-bottom: -50px;
+		background: url("images/sticks.gif") no-repeat;
+		background-position: -25px 0;
+		
+	}
+	
+	#preview_stick img { display: none; }
+	#preview_box input { margin-top: 13px;}
+	#sticks_box { height: 550px; }
+	#sticks_box .sticks { margin: 3px 15px 3px 15px; }
+	
+	#adsTower {
+		
+		display: none;
+		float: left;
+		width: 160px;
+		height: 600px;
+		margin: 15px;
+		
+	}
+	
+/********** CONTENT END **********/
+
+
+/********** PRE-FOOTER BEGIN **********/
+
+	#pre_footer {
+		
+		display: none;
+		float: left;
+		width: 600px;
+		height: 230px;
+		margin: 0 20px 0 15px;
+		background: url("images/backgrounds.png") 0px -250px no-repeat;
+		
+	}
+
+	#pre_footer h2 {
+		
+		padding-top: 20px;
+		font-size: 18px;
+		
+	}
+	
+	#pre_footer p {
+		
+		padding: 0 50px 0 230px;
+		text-align: center;
+		
+	}
+
+	#pre_footer a { border-bottom: 1px dashed;}
+	#pre_footer a:hover {
+		
+		border-bottom: 1px solid;
+		text-decoration: none;
+		
+	}
+	
+	#ads_footer { 
+		
+		float: left;
+		padding-top: 20px;
+		padding-bottom: 10px;
+		
+	}
+	
+	#ads1Sq, #ads2Sq {
+		
+		display: none;
+		float: left;
+		width: 300px;
+		height: 250px;
+		
+	}
+	
+	#ads1Tw, #ads2Tw {
+		
+		display: none;
+		width: 728px;
+		height: 90px;
+		
+	}
+	
+/********** PRE-FOOTER END **********/
+
+
+/********** FOOTER BEGIN **********/
+
+	#footer {
+		
+		float: left;
+		width: 100%;
+		height: 165px;
+		overflow: hidden;
+		background: #980e0e url("images/backgrounds.png") 0px -34px repeat-x;
+		
+	}
+
+	#footer_content {
+		
+		float: left;
+		margin: 45px 0 0 15px;
+		text-align: left;
+		
+	}
+
+	#footer ul {
+		
+		margin: 0 0 12px -40px;
+		text-align: left;
+		
+	}
+
+	#footer li { display: inline; }
+
+	.share_icons {
+		
+		float: left;
+		width: 130px;
+		height: 32px;
+		margin: 5px 0 15px 0;
+		overflow: hidden;
+		background: url("images/shareicons.png") no-repeat;
+		
+	}
+	
+	#orkut { background-position: 0 -36px; }
+	#orkut:hover { background-position: 0 -68px; }
+	#twitter { background-position: -143px -36px; }
+	#twitter:hover {	background-position: -143px -68px; }
+	#facebook  { background-position: -286px -36px; }
+	#facebook:hover { background-position: -286px -68px; }
+	#youtube { background-position: -429px -36px; }
+	#youtube:hover { background-position: -429px -68px; }
+
+	#footer #credits {
+		
+		float: left;
+		width: 100%;
+		text-align: left;
+		
+	}
+	
+	#footer #footer_flag {
+		
+		display: none;
+		float: right;
+		margin: 0 30px 15px 0;
+		width: 160px;
+		height: 152px;
+		background: #980e0e url("images/backgrounds.png") 0px -483px no-repeat;
+		
+	}
+	
+/********** FOOTER END **********/
